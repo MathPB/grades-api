@@ -6,7 +6,7 @@ import { db } from './models/index.js';
 
 (async () => {
   try {
-    await db.mongoose.connect(db.url, {
+    await db.mongoose.connect('mongodb+srv://teteu:teteu@cluster0.bwebc.mongodb.net/grades?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
